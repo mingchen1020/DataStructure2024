@@ -7,4 +7,3 @@ function calcBmi() {
     document.getElementById("bmi").innerHTML = bmi;
     console.log("Hello, Your BMI is:" + bmi);
 }
-IPO
