@@ -1,10 +1,12 @@
 var ary2d=[
-    [1,2,3], //index 0
-    [4,5,6], //index 1
-    [7,8,9]  //index 2
+    [1,1,0,1,1], //index 0
+    [1,0,1,1,0], //index 1
+    [1,0,1,0,0], //index 2
+    [1,0,1,1,0], //index 3
+    [1,0,1,0,0]   //index 4
 ];
 //row
-ary2d[1][2]
+//ary2d[1][2]
 var Ans=[0,1,2,3,4,5,6,7,8,9];
  //get index 0 at Ans:   Ans[0]
  //get 6 in ary2d?
@@ -36,6 +38,6 @@ var dynaAry2d=[];
 for(var _row=0;_row<row;_row++){
     dynaAry2d.push([]);
     for(var _col=0;_col<col;_col++){
-        dynaAry2d[_row].push(_col+_row*col);
+        dynaAry2d[_row].push(_row+","+_col);
     }
 }
