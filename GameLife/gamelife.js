@@ -77,5 +77,5 @@ var myGame = new Life(10,10);
 var myGame2 = new Life(100,100);
 
 myGame.initialize();
-//myGame.draw() //exervise
+//myGame.draw()
 myGame.update();
