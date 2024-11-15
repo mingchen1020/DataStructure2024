@@ -1,8 +1,8 @@
-function bracketMatching(str){
+String.prototype.bm=function(){
     var left="{[(";
     var right="}])";
     var open=[] //stack
-    var symbol = str.charAt(i=0);
+    var symbol = this.charAt(i=0);
     var isMatched = true;
     while(isMatched && symbol != ''){
         //if(symbol =='{' || symbol=='(' || symbol == '['){
@@ -20,7 +20,7 @@ function bracketMatching(str){
             } 
         }
        // i++;//++i
-        symbol = str.charAt(++i);
+        symbol = this.charAt(++i);
     }  
     if(open.length>0 || !isMatched)
         return 'unMatched';
@@ -28,8 +28,6 @@ function bracketMatching(str){
         return 'matched';
 }
 
+var test="{a = (1 + v(b[3 + c[4]]))";
 
-var test="a = (1 + v(b[3 + c[4]]))"
-console.log(bracketMatching(test));
-
- 
+console.log( test.bm());
